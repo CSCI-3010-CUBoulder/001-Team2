@@ -95,8 +95,6 @@ std::vector<double> Multiples(double n, double m);
 // returns -1 if the number is negative and 1 if positive
 double Sign(double num);
 
-
-// adds n to each element of the vector
 std::vector<int> AddN(std::vector<int> vec, int n) {
 	for(int i = 0; i < vec.size(); i ++){
 		vec[i] += n; 
