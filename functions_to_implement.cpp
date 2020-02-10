@@ -19,7 +19,14 @@ std::vector<int> MatchVectors(std::vector<int> a, std::vector<int> b);
 
 // divides an input integer by 2 until it is impossible to do so, then returns the final number.
 // (16 = 2 * 2 * 2 * 2 * 1 -> 1, 7 -> 7, 26 = 2 * 13 -> 13, 52 = 2 * 2 * 13 -> 13)
-int RemoveTwos(int original);
+int RemoveTwos(int original)
+{
+	while(original %2 == 0)
+	{
+		original = original / 2;
+	}
+	return original;
+}
 
 // takes a vector of integers and removes all elements evenly divisible by the passed in int
 std::vector<int> MultiplesFilter(std::vector<int>, int divides_by);
@@ -58,9 +65,9 @@ int Factorial(int n);
 // returns -1 if the number is negative and 1 if positive
 int Sign(int num) {
 	if(num < 0) {
-		return -1; 
+		return -1;
 	}
-	return 1; 
+	return 1;
 }
 
 // takes two vectors of doubles, a and b. The function then removes elements from a if they are also in b.
@@ -108,7 +115,7 @@ double Sign(double num) {
 
 std::vector<int> AddN(std::vector<int> vec, int n) {
 	for(int i = 0; i < vec.size(); i ++){
-		vec[i] += n; 
+		vec[i] += n;
 	}
 	return vec; 
 }
