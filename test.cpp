@@ -16,7 +16,7 @@ TEST_CASE("Sign", "[functions_to_implement-sign]")
 }
 
 // Test for AddN()
-TEST_CASE("Add n", "[functions_to_implement-sign]")
+TEST_CASE("Add n", "[functions_to_implement-addn]")
 {
 	std::vector<int> vect{ 10, 20, 30 };
 	
